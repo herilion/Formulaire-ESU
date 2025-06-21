@@ -3,17 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../static/style/style.css">
     <title>scolarite</title>
 </head>
 <body>
     <header>
-        <img src="" alt="minesu">
-        <img src="" alt="pnud">
+        <img src="../static/images/minesu.png" alt="minesu">
+        <img src="../static/images/UNDP_acc_lab.jpg" alt="pnud">
     </header>
     <main>
         <div class="section">
-            
+            <h1>FORMULAIRE FICHE DE SCOLARITÉ</h1>
+
+  <form>
+    <!-- Système éducatif -->
+    <label for="systeme">* Système Éducatif</label>
+    <p class="subtext">choisissez le système éducatif pour lequel vous voulez compléter la fiche</p>
+    <div class="radio-group">
+      <label><input type="radio" name="systeme" value="LMD" required> LMD</label>
+      <label><input type="radio" name="systeme" value="PADEM"> PADEM</label>
+    </div>
+
+    <!-- Province -->
+    <label for="province">* Province</label>
+    <select id="province" name="province" required>
+      <option value="">aucun élément sélectionné</option>
+      <option value="Kinshasa">Kinshasa</option>
+      <option value="Kasaï">Kasaï</option>
+      <option value="Haut-Katanga">Haut-Katanga</option>
+      <!-- ajoute d'autres provinces ici -->
+    </select>
+
+    <!-- Établissement -->
+    <label for="etablissement">* Établissement</label>
+    <input type="text" id="etablissement" name="etablissement" required>
+
+    <!-- Adresse -->
+    <label for="adresse">* Adresse</label>
+    <input type="text" id="adresse" name="adresse" required>
+
+    <!-- Téléphone -->
+    <label for="telephone">* Téléphone de l'Établissement ou du Chef de l’établissement</label>
+    <p class="subtext">entrez un Numéro à 10 Chiffres (Ex: 0999000000)</p>
+    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+
+    <!-- Soumettre -->
+    <button type="submit">✔ Soumettre</button>
+  </form>
         </div>
     </main>
 </body>
