@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- End Required meta tags -->
+    <!-- Begin SEO tag -->
+    <title> Sign In | ESU </title>
+    <meta property="og:title" content="Sign In">
+    <meta name="author" content="Beni Arisandi">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Responsive admin theme build on top of Bootstrap 4">
+    <meta property="og:description" content="Responsive admin theme build on top of Bootstrap 4">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="/frontend/src/assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/frontend/src/assets/favicon.ico">
+    <meta name="theme-color" content="#3063A0"><!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet"><!-- End Google font -->
+    <!-- BEGIN PLUGINS STYLES -->
+    <link rel="stylesheet" href="/frontend/src/assets/vendor/%40fortawesome/fontawesome-free/css/all.min.css">
+    <!-- END PLUGINS STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" href="/frontend/src/assets/stylesheets/theme.min.css" data-skin="default">
+    <link rel="stylesheet" href="/frontend/src/assets/stylesheets/theme-dark.min.css" data-skin="dark">
+    <link rel="stylesheet" href="/frontend/src/assets/stylesheets/custom.css">
+    <link rel="stylesheet" href="/frontend/src/assets/stylesheets/style.css">
+    <script>
+        var skin = localStorage.getItem('skin') || 'default';
+        var disabledSkinStylesheet = document.querySelector('link[data-skin]:not([data-skin="' + skin + '"])');
+        // Disable unused skin immediately
+        disabledSkinStylesheet.setAttribute('rel', '');
+        disabledSkinStylesheet.setAttribute('disabled', true);
+        // add loading class to html immediately
+        document.querySelector('html').classList.add('loading');
+    </script><!-- END THEME STYLES -->
+</head>
+
+<body>
+    <main class="auth">
+      <!-- form -->
+      <form class="auth-form auth-form-reflow">
+        <div class="text-center mb-4">
+          <div class="mb-4">
+            <img class="rounded" src="/frontend/src/assets/apple-touch-icon.png" alt="" height="72">
+          </div>
+          <h1 class="h3"> Réunitialisation mot de passe </h1>
+        </div>
+        <p class="mb-4"> Ne vous inquiétez pas, nous allons vous aider à réinitialiser votre mot de passe en toute sécurité. </p><!-- .form-group -->
+        <div class="form-group mb-4">
+          <label class="d-block text-left" for="inputUser">Entrer votre adresse e-mail</label> <input type="text" id="inputUser" class="form-control form-control-lg" required="" autofocus="">
+          <p class="text-muted">
+            <small>Nous vous enverrons un lien de réinitialisation du mot de passe par e-mail.</small>
+          </p>
+        </div><!-- /.form-group -->
+        <!-- actions -->
+        <div class="d-block d-md-inline-block mb-2">
+          <button class="btn btn-lg btn-block btn-primary" type="submit">Soumettre</button>
+        </div>
+        <div class="d-block d-md-inline-block">
+          <a href="/frontend/src/views/auth/login.html" class="btn btn-block btn-light">Se connecter</a>
+        </div>
+      </form><!-- /.auth-form -->
+        <footer class="auth-footer">© 2025 Beyin LazQuir.</footer>
+    </main><!-- /.auth -->
+    <!-- BEGIN BASE JS -->
+    <script src="/frontend/src/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/frontend/src/assets/vendor/popper.js/umd/popper.min.js"></script>
+    <script src="/frontend/src/assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- END BASE JS -->
+    <!-- BEGIN THEME JS -->
+    <script src="/frontend/src/assets/javascript/theme.min.js"></script> <!-- END THEME JS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116692175-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-116692175-1');
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from uselooper.com/table-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jun 2025 00:09:47 GMT -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- End Required meta tags -->
+  <!-- Begin SEO tag -->
+  <title> Basic Table | Looper - Bootstrap 4 Admin Theme </title>
+  <meta property="og:title" content="Basic Table">
+  <meta name="author" content="Beni Arisandi">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="Responsive admin theme build on top of Bootstrap 4">
+  <meta property="og:description" content="Responsive admin theme build on top of Bootstrap 4">
+  <link rel="canonical" href="index.html">
+  <meta property="og:url" content="index.html">
+  <meta property="og:site_name" content="Looper - Bootstrap 4 Admin Theme">
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/frontend/src/assets/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/frontend/src/assets/favicon.ico">
+  <meta name="theme-color" content="#3063A0"><!-- End FAVICONS -->
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet"><!-- End GOOGLE FONT -->
+  <!-- BEGIN PLUGINS STYLES -->
+  <link rel="stylesheet" href="/frontend/src/assets/vendor/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="/frontend/src/assets/vendor/%40fortawesome/fontawesome-free/css/all.min.css">
+  <!-- END PLUGINS STYLES -->
+  <!-- BEGIN THEME STYLES -->
+  <link rel="stylesheet" href="/frontend/src/assets/stylesheets/theme.min.css" data-skin="default">
+  <link rel="stylesheet" href="/frontend/src/assets/stylesheets/theme-dark.min.css" data-skin="dark">
+  <link rel="stylesheet" href="/frontend/src/assets/stylesheets/custom.css">
+  <script>
+    var skin = localStorage.getItem('skin') || 'default';
+    var disabledSkinStylesheet = document.querySelector('link[data-skin]:not([data-skin="' + skin + '"])');
+    // Disable unused skin immediately
+    disabledSkinStylesheet.setAttribute('rel', '');
+    disabledSkinStylesheet.setAttribute('disabled', true);
+    // add loading class to html immediately
+    document.querySelector('html').classList.add('loading');
+  </script><!-- END THEME STYLES -->
+</head>
+
+<body>
+  <!-- .app -->
+  <div class="app">
+
+    <header id="Header" class="app-header app-header-dark">
+      <!-- .top-bar -->
+      <div class="top-bar">
+        <div class="top-bar-brand ">
+          <button class="hamburger hamburger-squeeze mr-2" type="button" data-toggle="aside-menu"
+            aria-label="toggle aside menu"><span class="hamburger-box"><span
+                class="hamburger-inner"></span></span></button>
+          <a href="index-2.html">
+            <h2>ESU</h2>
+          </a>
+        </div>
+        <!-- .top-bar-list -->
+        <div class="top-bar-list">
+          <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+            <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span
+                class="hamburger-box"><span class="hamburger-inner"></span></span></button> <!-- /toggle menu -->
+          </div>
+
+          <div class="top-bar-item top-bar-item-full">
+            <!-- .top-bar-search -->
+            <form class="top-bar-search">
+              <div class="input-group input-group-search dropdown">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                </div>
+                <input type="text" class="form-control" data-toggle="dropdown" aria-label="Search"
+                  placeholder="Recherche">
+              </div>
+            </form>
+          </div>
+          <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+            <div class="dropdown d-none d-md-flex">
+              <button class="btn-account" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><span class="user-avatar user-avatar-md"><img
+                    src="/frontend/src/assets/images/avatars/profile.jpg" alt=""></span> <span
+                  class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name">Josué Ngoma</span> <span
+                    class="account-description">Développeur Web</span></span></button> <!-- .dropdown-menu -->
+              <div class="dropdown-menu">
+                <div class="dropdown-arrow d-lg-none" x-arrow=""></div>
+                <div class="dropdown-arrow ml-3 d-none d-lg-block"></div>
+                <h6 class="dropdown-header d-none d-md-block d-lg-none">Josué Ngoma</h6><a class="dropdown-item"
+                  href="user-profile.html"><span class="dropdown-icon oi oi-person"></span> Profile</a> <a
+                  class="dropdown-item" href="/frontend/views/auth/login.html"><span
+                    class="dropdown-icon oi oi-account-logout"></span> Deconnexion</a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Aide</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside id="Aside" class="app-aside app-aside-expand-md app-aside-light">
+      <div class="aside-content">
+        <header class="aside-header d-block d-md-none">
+          <button class="btn-account" type="button" data-toggle="collapse" data-target="#dropdown-aside"><span
+              class="user-avatar user-avatar-lg"><img src="/frontend/src/assets/images/avatars/profile.jpg" alt=""></span> <span
+              class="account-icon"><span class="fa fa-caret-down fa-lg"></span></span> <span
+              class="account-summary"><span class="account-name">Beni Arisandi</span> <span
+                class="account-description">Marketing Manager</span></span></button> <!-- /.btn-account -->
+          <div id="dropdown-aside" class="dropdown-aside collapse">
+            <div class="pb-3">
+              <a class="dropdown-item" href="user-profile.html"><span class="dropdown-icon oi oi-person"></span>
+                Profile</a> <a class="dropdown-item" href="auth-signin-v1.html"><span
+                  class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Help Center</a> <a
+                class="dropdown-item" href="#">Ask Forum</a> <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+            </div>
+          </div>
+        </header>
+
+        <div class="aside-menu overflow-hidden">
+          <nav id="stacked-menu" class="stacked-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="/frontend/views/dashboard/index.html" class="menu-link"><span class="menu-icon fas fa-home"></span>
+                  <span class="menu-text">Dashboard</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="/frontend/views/dashboard/forms.html" class="menu-link"><span class="menu-icon oi oi-pencil"></span>
+                  <span class="menu-text">Formulaire</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="/frontend/views/dashboard/collections.html" class="menu-link"><span
+                    class="menu-icon oi oi-list-rich"></span> <span class="menu-text">Collections</span></a>
+              </li>
+
+              <li class="menu-header">Interfaces </li>
+
+              <li class="menu-item has-child">
+                <a href="#" class="menu-link"><span class="menu-icon oi oi-person"></span> <span
+                    class="menu-text">User</span></a> <!-- child menu -->
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="user-profile.html" class="menu-link">Profile</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="user-activities.html" class="menu-link">Taches</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="user-teams.html" class="menu-link">Membre</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="user-profile-settings.html" class="menu-link">Paramètre</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <footer class="aside-footer border-top p-2">
+          <button class="btn btn-light btn-block text-primary" data-toggle="skin"><span
+              class="d-compact-menu-none">Thême sombre</span> <i class="fas fa-moon ml-1"></i></button>
+        </footer>
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <!-- .wrapper -->
+      <div class="wrapper">
+        <!-- .page -->
+        <div class="page has-sidebar has-sidebar-expand-xl">
+          <!-- .page-inner -->
+          <div class="page-inner">
+            <!-- .page-title-bar -->
+            <header class="page-title-bar">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active">
+                    <a href="#"><i class="breadcrumb-icon fa fa-angle-left mr-2"></i>Dashboard</a>
+                  </li>
+                </ol>
+              </nav>
+              <h1 class="page-title">Formunlaire fiche de scolarité</h1>
+            </header><!-- /.page-title-bar -->
+            <!-- .page-section -->
+            <div class="page-section">
+              <div class="d-xl-none">
+                <button class="btn btn-danger btn-floated" type="button" data-toggle="sidebar"><i
+                    class="fa fa-th-list"></i></button>
+              </div><!-- .card -->
+              <div id="base-style" class="card">
+                <!-- .card-body -->
+                <div class="card-body">
+                  <!-- .form -->
+                  <form>
+                    <!-- .fieldset -->
+                    <fieldset>
+                      <legend>Système Educatif</legend> 
+                      <div class="form-group">
+                        <label class="d-block">choisissez le système éducatif pour lequel vous voulez compléter la
+                          fiche</label>
+                        <div class="custom-control custom-control-inline custom-radio">
+                          <input type="radio" class="custom-control-input" name="rdGroup1" id="rd1"> <label
+                            class="custom-control-label" for="rd1">LMD</label>
+                        </div>
+                        <div class="custom-control custom-control-inline custom-radio">
+                          <input type="radio" class="custom-control-input" name="rdGroup1" id="rd2"> <label
+                            class="custom-control-label" for="rd2">PADEM</label>
+                        </div>
+                        <div class="custom-control custom-control-inline custom-radio">
+                          <input type="radio" class="custom-control-input" name="rdGroup1" id="rd3" checked> <label
+                            class="custom-control-label" for="rd3">Autres</label>
+                        </div>
+                      </div>
+                      <div id="floating-label" class="card">
+                        <!-- .card-body -->
+                        <div class="card-body">
+                          <!-- .form -->
+                          <form>
+                            <!-- .fieldset -->
+                            <fieldset>
+                              <legend>Localisation</legend> 
+                              <div class="form-group">
+                                <div class="form-label-group">
+                                  <input type="text" class="form-control" id="fl1" value="" placeholder="Email address"
+                                    required=""> <label for="fl1">Etablissement</label>
+                                </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                <div class="form-label-group">
+                                  <select class="custom-select" id="fls1" required="">
+                                    <option value=""> Selectionner... </option>
+                                    <option>Kinshasa</option>
+                                    <option>Kongo Central</option>
+                                    <option>Kwango</option>
+                                    <option>Kwilu</option>
+                                    <option>Maï-Ndombe</option>
+                                    <option>Equateur</option>
+                                    <option>Sud-Ubangi</option>
+                                    <option>Nord-Ubangi</option>
+                                    <option>Mongala</option>
+                                    <option>Tshuapa</option>
+                                    <option>Tshopo</option>
+                                    <option>Haut-Uele</option>
+                                    <option>Bas-Uele</option>
+                                    <option>Ituri</option>
+                                    <option>Nord-Kivu</option>
+                                    <option>Sud-Kivu</option>
+                                    <option>Maniema</option>
+                                    <option>Haut-Katanga</option>
+                                    <option>Lualaba</option>
+                                    <option>Haut-Lomami</option>
+                                    <option>Tanganyika</option>
+                                    <option>Lomami</option>
+                                    <option>Kasaï-Oriental</option>
+                                    <option>Sankuru</option>
+                                    <option>Kasaï-Central</option>
+                                    <option>Kasaï</option>
+                                  </select> <label for="fls1">Provinces</label>
+                                </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                <div class="form-group">
+                                  <label for="tf6">Adresses</label>
+                                  <textarea class="form-control" id="tf6" rows="3"></textarea>
+                                </div>
+                              </div> 
+                            </fieldset>
+                          </form>
+                        </div>
+                        <div class="card-body border-top">
+                          <form>
+                            <fieldset>
+                              <legend>Coordonnées de l'établisseùent</legend> 
+                              <div class="form-group">
+                                <div class="form-label-group">
+                                  <input type="number" class="form-control" id="fl2" placeholder="" required=""> <label
+                                    for="fl2">Télephone de l'Etablissement</label>
+                                </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                      
+
+
+                      <!-- .form-actions -->
+                      <div class="form-actions">
+                        <button class="btn btn-primary" type="submit">Soumettre</button>
+                      </div><!-- /.form-actions -->
+                  </form><!-- /form .needs-validation -->
+                </div>
+              </div>
+            </div><!-- /.page-section -->
+            <!-- .app-footer -->
+            <footer class="app-footer">
+              <div class="copyright">© 2025 Beyin LazQuir.</div>
+            </footer><!-- /.app-footer -->
+          </div><!-- /.page-inner -->
+          <!-- .page-sidebar -->
+          <div class="page-sidebar page-sidebar-fixed">
+            <!-- .sidebar-header -->
+            <header class="sidebar-header d-xl-none">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a class="prevent-default" href="#" onclick="Looper.toggleSidebar()"><i
+                      class="breadcrumb-icon fa fa-angle-left mr-2"></i>Back</a>
+                </li>
+              </ol>
+            </header><!-- /.sidebar-header -->
+            <!-- .nav -->
+            <nav id="nav-content" class="nav flex-column mt-4">
+              <a href="#base-style" class="nav-link smooth-scroll">Système éducatif</a> 
+              <a href="#labels" class="nav-link smooth-scroll">Domaine</a> 
+              <a href="#floating-label" class="nav-link smooth-scroll">Fiche proprement dite</a>
+              <a href="#selects" class="nav-link smooth-scroll">Avis</a> 
+              <!-- <a href="#checkboxes" class="nav-link smooth-scroll">Checkboxes</a> 
+              <a href="#radios" class="nav-link smooth-scroll">Radios</a>  -->
+            </nav><!-- /.nav -->
+          </div><!-- /.page-sidebar -->
+        </div><!-- /.page -->
+      </div><!-- /.wrapper -->
+    </main><!-- /.app-main -->
+  </div><!-- /.app -->
+  <!-- BEGIN BASE JS -->
+  <script src="/frontend/src/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/frontend/src/assets/vendor/popper.js/umd/popper.min.js"></script>
+  <script src="/frontend/src/assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- END BASE JS -->
+  <!-- BEGIN PLUGINS JS -->
+  <script src="/frontend/src/assets/vendor/pace-progress/pace.min.js"></script>
+  <script src="/frontend/src/assets/vendor/stacked-menu/js/stacked-menu.min.js"></script>
+  <script src="/frontend/src/assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script> <!-- END PLUGINS JS -->
+  <!-- BEGIN THEME JS -->
+  <script src="/frontend/src/assets/javascript/theme.min.js"></script> <!-- END THEME JS -->
+  <!-- BEGIN PAGE LEVEL JS -->
+  <script src="/frontend/src/assets/javascript/pages/table-demo.js"></script> <!-- END PAGE LEVEL JS -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116692175-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-116692175-1');
+  </script>
+</body>
+
+<!-- Mirrored from uselooper.com/table-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jun 2025 00:09:48 GMT -->
+
+</html>
